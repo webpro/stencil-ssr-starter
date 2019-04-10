@@ -1,1 +1,3 @@
-console.log('global js');
+export default () => {
+  console.log('global js');
+};

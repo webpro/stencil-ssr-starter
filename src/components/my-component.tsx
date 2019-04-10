@@ -1,4 +1,4 @@
-import { Component, Prop, Method } from '@stencil/core';
+import { Component, Prop, Method, h } from '@stencil/core';
 
 @Component({
   tag: 'my-component',
@@ -9,7 +9,7 @@ export class MyComponent {
 
   @Prop() last: string;
 
-  @Method() handleClick() {
+  @Method() async handleClick() {
     console.log('click');
   }
 
