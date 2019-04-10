@@ -1,0 +1,20 @@
+{
+  "name": "stencil-ssr-starter",
+  "version": "0.0.1",
+  "description": "Stencil with SSR",
+  "main": "dist/index.js",
+  "module": "dist/esm/es5/index.js",
+  "collection": "dist/collection/collection-manifest.json",
+  "types": "dist/types/components.d.ts",
+  "scripts": {
+    "build": "stencil build",
+    "dev": "stencil build --dev --watch --serve",
+    "ssr": "node server.js"
+  },
+  "dependencies": {
+    "@stencil/core": "^0.18.1",
+    "@stencil/router": "^0.3.3",
+    "express": "^4.16.4"
+  },
+  "license": "MIT"
+}
