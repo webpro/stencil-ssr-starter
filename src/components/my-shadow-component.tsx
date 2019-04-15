@@ -1,9 +1,8 @@
 import { Component, Prop, Method } from '@stencil/core';
 
 @Component({
-  tag: 'my-component',
-  styleUrl: 'my-component.css',
-  shadow: false
+  tag: 'my-shadow-component',
+  shadow: true
 })
 export class MyComponent {
   @Prop() first: string;
@@ -11,7 +10,7 @@ export class MyComponent {
   @Prop() last: string;
 
   @Method() handleClick() {
-    console.log('click');
+    console.log('shadow click');
   }
 
   render() {
